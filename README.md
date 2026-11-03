@@ -8,14 +8,15 @@ A dependency-free incident-response triage tool that collects host artefacts and
 
 `Version 0.1.0` · Runtime: Python 3.8+ · Core dependencies: **none** (standard library only)
 
-[Quick start](#quick-start) · [What it does](#what-it-does) · the on-the-box companion to **[FluxHunt](https://github.com/iamjammie/FluxHunt)**
+[Quick start](#quick-start) · [What it does](#what-it-does) · the on-the-box companion to **[FluxHunt](https://github.com/iamjammie/FluxHunt)** · [the Hunt suite](https://iamjammie.github.io/FluxHunt/suite.html)
 
 </div>
 
 ---
 
-HostHunt is the endpoint-side companion to **[FluxHunt](https://github.com/iamjammie/FluxHunt)**:
-where FluxHunt hunts on the wire (PCAP traffic analysis in the browser), HostHunt hunts on the box.
+HostHunt is the endpoint-side companion to **[FluxHunt](https://github.com/iamjammie/FluxHunt)** —
+together they're the **[Hunt suite](https://iamjammie.github.io/FluxHunt/suite.html)**. Where
+FluxHunt hunts on the wire (PCAP traffic analysis in the browser), HostHunt hunts on the box.
 It collects the artefacts a responder needs in the first hour of an investigation — running
 processes, services, scheduled tasks, autostart locations, network connections, accounts, event
 logs, persistence mechanisms — and runs them through an ATT&CK-mapped detection engine, an IOC
