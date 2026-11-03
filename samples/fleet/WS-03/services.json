@@ -1,0 +1,29 @@
+[
+ {
+  "name": "Dnscache",
+  "display_name": "DNS Client",
+  "path": "C:\\Windows\\system32\\svchost.exe -k NetworkService -p",
+  "start_mode": "Auto",
+  "state": "Running",
+  "account": "NT AUTHORITY\\NetworkService",
+  "type": "service"
+ },
+ {
+  "name": "Spooler",
+  "display_name": "Print Spooler",
+  "path": "C:\\Windows\\System32\\spoolsv.exe",
+  "start_mode": "Auto",
+  "state": "Running",
+  "account": "LocalSystem",
+  "type": "service"
+ },
+ {
+  "name": "WinDefend",
+  "display_name": "Microsoft Defender",
+  "path": "\"C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18\\MsMpEng.exe\"",
+  "start_mode": "Auto",
+  "state": "Running",
+  "account": "LocalSystem",
+  "type": "service"
+ }
+]

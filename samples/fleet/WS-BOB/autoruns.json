@@ -1,0 +1,20 @@
+[
+ {
+  "key": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "name": "Updater",
+  "value": "powershell -nop -w hidden -enc aQBlAHgA",
+  "source": "registry"
+ },
+ {
+  "key": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon",
+  "name": "Shell",
+  "value": "explorer.exe,C:\\Users\\bob\\AppData\\Roaming\\run.exe",
+  "source": "registry"
+ },
+ {
+  "key": "HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\sethc.exe",
+  "name": "Debugger",
+  "value": "C:\\Windows\\System32\\cmd.exe",
+  "source": "registry"
+ }
+]

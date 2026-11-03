@@ -1,0 +1,9 @@
+# HostHunt IOC file — one indicator per line, optional ",label".
+# Supported types are auto-detected: md5/sha1/sha256 hash, IPv4, domain, filename, or free string.
+# .txt (this format), .csv (headered or headerless), and .json are all accepted.
+185.220.101.47,known-c2
+evil.example.com,phishing-infra
+ff66aa11bb22cc33dd44ee55ff66aa11bb22cc33dd44ee55ff66aa11bb22cc33,dropper-stage2
+b.exe,stage2-payload
+support$,rogue-admin-account
+mimikatz

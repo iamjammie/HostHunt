@@ -1,0 +1,25 @@
+[
+ {
+  "proto": "tcp",
+  "local_addr": "10.0.0.9",
+  "local_port": 50310,
+  "remote_addr": "185.220.101.47",
+  "remote_port": 4444,
+  "state": "ESTABLISHED",
+  "pid": 4600,
+  "process": "scvhost.exe",
+  "exe": "C:\\Users\\bob\\Downloads\\scvhost.exe",
+  "user": "CORP\\bob"
+ },
+ {
+  "proto": "tcp",
+  "local_addr": "0.0.0.0",
+  "local_port": 4444,
+  "remote_addr": "0.0.0.0",
+  "remote_port": 0,
+  "state": "LISTEN",
+  "pid": 4512,
+  "process": "svchost.exe",
+  "exe": "C:\\Users\\bob\\AppData\\Local\\Temp\\svchost.exe"
+ }
+]

@@ -1,0 +1,8 @@
+[
+ {
+  "kind": "status",
+  "RealTimeProtectionEnabled": true,
+  "IsTamperProtected": true,
+  "AntivirusEnabled": true
+ }
+]

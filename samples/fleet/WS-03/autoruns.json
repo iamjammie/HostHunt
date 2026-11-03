@@ -1,0 +1,14 @@
+[
+ {
+  "key": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "name": "SecurityHealth",
+  "value": "C:\\Windows\\System32\\SecurityHealthSystray.exe",
+  "source": "registry"
+ },
+ {
+  "key": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "name": "RtkAudUService",
+  "value": "C:\\Windows\\System32\\RtkAudUService64.exe -background",
+  "source": "registry"
+ }
+]

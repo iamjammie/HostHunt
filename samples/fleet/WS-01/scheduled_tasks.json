@@ -1,0 +1,10 @@
+[
+ {
+  "name": "\\Microsoft\\Windows\\Defrag\\ScheduledDefrag",
+  "command": "%windir%\\system32\\defrag.exe -c -h -o $(Arg0)",
+  "run_as": "SYSTEM",
+  "author": "Microsoft",
+  "schedule": "Weekly",
+  "status": "Ready"
+ }
+]

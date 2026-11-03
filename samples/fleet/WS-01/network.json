@@ -1,0 +1,22 @@
+[
+ {
+  "proto": "tcp",
+  "local_addr": "0.0.0.0",
+  "local_port": 445,
+  "remote_addr": "0.0.0.0",
+  "remote_port": 0,
+  "state": "LISTEN",
+  "pid": 4,
+  "process": "System"
+ },
+ {
+  "proto": "tcp",
+  "local_addr": "10.0.0.5",
+  "local_port": 50210,
+  "remote_addr": "13.107.42.14",
+  "remote_port": 443,
+  "state": "ESTABLISHED",
+  "pid": 820,
+  "process": "svchost.exe"
+ }
+]

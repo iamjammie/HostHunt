@@ -1,0 +1,14 @@
+[
+ {
+  "kind": "consumer",
+  "class": "CommandLineEventConsumer",
+  "Name": "evilConsumer",
+  "CommandLineTemplate": "powershell.exe -nop -enc ZQB2AGkAbAA="
+ },
+ {
+  "kind": "binding",
+  "class": "__FilterToConsumerBinding",
+  "Filter": "__EventFilter.Name=\"f1\"",
+  "Consumer": "CommandLineEventConsumer.Name=\"evilConsumer\""
+ }
+]

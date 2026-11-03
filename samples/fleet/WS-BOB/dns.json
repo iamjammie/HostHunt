@@ -1,0 +1,9 @@
+[
+ {
+  "hosts": [
+   "127.0.0.1 localhost",
+   "185.220.101.47 update.microsoft.com"
+  ],
+  "hosts_mtime": "2026-11-03T09:25:00+00:00"
+ }
+]

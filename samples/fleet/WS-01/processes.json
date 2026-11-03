@@ -1,0 +1,71 @@
+[
+ {
+  "pid": 4,
+  "ppid": 0,
+  "name": "System",
+  "exe": "",
+  "cmdline": "",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid"
+ },
+ {
+  "pid": 388,
+  "ppid": 4,
+  "name": "smss.exe",
+  "exe": "C:\\Windows\\System32\\smss.exe",
+  "cmdline": "",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:00+00:00"
+ },
+ {
+  "pid": 520,
+  "ppid": 388,
+  "name": "wininit.exe",
+  "exe": "C:\\Windows\\System32\\wininit.exe",
+  "cmdline": "wininit.exe",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:02+00:00"
+ },
+ {
+  "pid": 620,
+  "ppid": 520,
+  "name": "services.exe",
+  "exe": "C:\\Windows\\System32\\services.exe",
+  "cmdline": "C:\\Windows\\system32\\services.exe",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:03+00:00"
+ },
+ {
+  "pid": 632,
+  "ppid": 520,
+  "name": "lsass.exe",
+  "exe": "C:\\Windows\\System32\\lsass.exe",
+  "cmdline": "C:\\Windows\\system32\\lsass.exe",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:03+00:00"
+ },
+ {
+  "pid": 820,
+  "ppid": 620,
+  "name": "svchost.exe",
+  "exe": "C:\\Windows\\System32\\svchost.exe",
+  "cmdline": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:00:05+00:00"
+ },
+ {
+  "pid": 2110,
+  "ppid": 820,
+  "name": "explorer.exe",
+  "exe": "C:\\Windows\\explorer.exe",
+  "cmdline": "C:\\Windows\\Explorer.EXE",
+  "user": "CORP\\alice",
+  "signature": "Valid",
+  "start_time": "2026-11-01T08:05:00+00:00"
+ }
+]

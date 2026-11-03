@@ -1,0 +1,26 @@
+[
+ {
+  "name": "Administrator",
+  "enabled": false,
+  "privileged_groups": [
+   "Administrators"
+  ],
+  "sid": "S-1-5-21-1-1-1-500"
+ },
+ {
+  "name": "bob",
+  "enabled": true,
+  "privileged_groups": [],
+  "sid": "S-1-5-21-1-1-1-1109"
+ },
+ {
+  "name": "support$",
+  "enabled": true,
+  "privileged_groups": [
+   "Administrators"
+  ],
+  "hidden_from_logon": true,
+  "sid": "S-1-5-21-1-1-1-1200",
+  "pw_last_set": "2026-11-03T09:20:00+00:00"
+ }
+]

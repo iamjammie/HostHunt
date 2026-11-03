@@ -1,0 +1,16 @@
+[
+ {
+  "kind": "status",
+  "RealTimeProtectionEnabled": false,
+  "IsTamperProtected": false,
+  "AntivirusEnabled": true
+ },
+ {
+  "kind": "preferences",
+  "ExclusionPath": [
+   "C:\\Users\\bob\\AppData\\Local\\Temp",
+   "C:\\Windows\\Temp"
+  ],
+  "DisableRealtimeMonitoring": true
+ }
+]
