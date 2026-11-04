@@ -15,8 +15,10 @@ A dependency-free incident-response triage tool that collects host artefacts and
 ---
 
 HostHunt is the endpoint-side companion to **[FluxHunt](https://github.com/iamjammie/FluxHunt)** —
-together they're the **[Hunt suite](https://iamjammie.github.io/FluxHunt/suite.html)**. Where
-FluxHunt hunts on the wire (PCAP traffic analysis in the browser), HostHunt hunts on the box.
+together with **[AirHunt](https://github.com/iamjammie/AirHunt)** they're the
+**[Hunt suite](https://iamjammie.github.io/FluxHunt/suite.html)**. Where FluxHunt hunts on the wire
+(PCAP traffic analysis in the browser), HostHunt hunts on the box, and AirHunt carries the results
+out of an air-gapped environment by screen and camera.
 It collects the artefacts a responder needs in the first hour of an investigation — running
 processes, services, scheduled tasks, autostart locations, network connections, accounts, event
 logs, persistence mechanisms — and runs them through an ATT&CK-mapped detection engine, an IOC
@@ -25,7 +27,9 @@ reports.
 
 The core is **pure Python standard library** — no third-party dependencies — so the collector can
 be dropped onto a suspect host from a USB stick or pushed via your EDR's remote shell / PsExec and
-will run on a stock Python 3.8+. That makes it usable on locked-down and air-gapped hosts.
+will run on a stock Python 3.8+. That makes it usable on locked-down and air-gapped hosts — and when
+the host has no way to send the report back, **[AirHunt](https://github.com/iamjammie/AirHunt)**
+moves it off the screen to a phone with nothing but a camera.
 
 > HostHunt is a **defensive triage** tool. It reads and reasons about host state and maps
 > observations to MITRE ATT&CK for an analyst to review. It does not execute, weaponise, or explain
