@@ -9,14 +9,44 @@ permissions:
 
 jobs:
   test:
-    name: Unit and end-to-end tests
+    name: Compile, tests, data integrity
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Install test runner
-        run: pip install pytest
+          python-version: ${{ matrix.python-version }}
+
+      - name: Byte-compile the package
+        run: python -m compileall -q hosthunt
+
+      - name: Install (with test extra, standard library only otherwise)
+        run: pip install -e ".[test]"
+
       - name: Run tests
-        run: python3 -m pytest tests/ -q
+        run: python -m pytest tests/ -q
+
+      - name: Bundled JSON data parses
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          bad = []
+          for p in pathlib.Path(".").rglob("*.json"):
+              if ".git" in p.parts:
+                  continue
+              try:
+                  json.loads(p.read_text(encoding="utf-8"))
+              except Exception as e:
+                  bad.append(f"{p}: {e}")
+          if bad:
+              print("\n".join(bad)); sys.exit(1)
+          print("all bundled JSON files parse")
+          PY
+
+      - name: CLI runs on generated sample fleet (offline smoke test)
+        run: |
+          python -c "import tempfile, os; from samples.make_samples import build; d=tempfile.mkdtemp(); build(d); print('samples built at', d)"
